@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.1.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bodyclass">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 btn"
+            >
+              <li><a>HOME</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <h1 class="whizz font-bold text-4xl">Whizz-Ticket</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="green text-lg">Home</a></li>
+            <li><a class="green text-lg">About</a></li>
+            <li><a class="green text-lg">Destination</a></li>
+            <li><a class="green text-lg">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-ghost green"
+            >Bus<img src="images/bus-icon.png"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <div class="bodyclass" style="border-radius: 15px">
+      <div
+        class="hero min-h-screen"
+        style="
+          background-image: linear-gradient(
+              rgba(255, 255, 100, 0.055),
+              rgba(255, 255, 255, 0.005)
+            ),
+            url(../Assignment-5/images/banner.png);
+          border-radius: 15px;
+        "
+      >
+        <div
+          class="hero-overlay bg-opacity-60"
+          style="border-radius: 15px"
+        ></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-2xl end">
+            <h1 class="mb-5 text-6xl font-bold">End-to-End Travel with</h1>
+            <h1 class="mb-5 text-5xl font-bold" style="color: #1dd100">
+              Whizz Paribahan
+            </h1>
+            <p class="mb-5">
+              You can travel with us via bus.Join us for an exciting journey as
+              we unveil our latest travel destinations, exclusive packages, and
+              personalized services tailored just for you.
+            </p>
+            <button class="btn buy" id="showSectionButton">Buy Tickets</button>
+          </div>
+        </div>
+        <!-- <div class="extra">
+        <div class="p">
+            500k+
+        </div>
+        <div class="p">
+            500k+
+        </div>
+        <div class="p">
+            500k+
+        </div>
+      </div> -->
+      </div>
+    </div>
+    <section class="part_coupon">
+      <h1 class="font-bold text-4xl text-center mb-36">Best offers for you</h1>
+      <div class="coupon">
+        <div>
+          <div
+            class="stats text-primary-content couple"
+            style="background-color: #ffbf0f"
+          >
+            <div class="single sin">
+              <div class="stat-value">15% OFF</div>
+              <div class="stat-title font-bold text-2xl">
+                on your next purchase
+              </div>
+              <div class="stat-title">use by january 2024</div>
+            </div>
+            <img src="images/cupon-devider.png" class="img1" />
+            <div class="single sin">
+              <div class="stat-value">NEW15</div>
+              <div class="stat-title">Coupon Code</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="stats text-primary-content couple"
+            style="background-color: #f78c9c"
+          >
+            <div class="couple sin">
+              <div class="stat-value">20% OFF</div>
+              <div class="stat-title font-bold text-2xl">
+                on your next purchase
+              </div>
+              <div class="stat-title">use by january 2024</div>
+            </div>
+            <img src="images/cupon-devider.png" class="img1" />
+            <div class="couple sin">
+              <div class="stat-value">Couple 20</div>
+              <div class="stat-title">Coupon Code</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offbtn">
+        <button class="btn btn-success outbtn mt-24">See All Offers</button>
+      </div>
+    </section>
+
+    <section id="ticket_section">
+      <section class="green_border">
+        <h1 class="font-bold text-4xl text-center mt-24 mb-10">
+          Whizz-Paribahan
+        </h1>
+        <p class="text-center mb-10">
+          Here are our bus services. You can see which buses are available and
+          book seats online. Get a discount and enjoy your travel.
+        </p>
+        <div class="greenback">
+          <div class="grid grid-cols-12 grid-rows-1">
+            <div class="green_part col-span-9">
+              <div class="greenline_part">
+                <div class="greenline">
+                  <div>
+                    <img src="images/bus-logo.png" />
+                  </div>
+                  <div>
+                    <h2 class="px-5 text-3xl font-bold">Greenline Paribahan</h2>
+                    <p class="px-5">Coach-009-WEB ! Ac_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-outline btn-success seat_btn"
+                    style="
+                      background-color: #c2ecba;
+                      border-color: green;
+                      border: none;
+                    "
+                  >
+                    <img src="images/seat-green.png" /><label id="lblSeatsLeft"
+                      >40</label
+                    >
+                    &nbsp; Seats left
+                  </button>
+                </div>
+              </div>
+              <div class="route">
+                <div>Route</div>
+                <div>Dhaka-Sylhet</div>
+              </div>
+              <hr class="new2" />
+              <div class="route">
+                <div>Departure Time</div>
+                <div>9:00 PM</div>
+              </div>
+              <hr class="new2" />
+              <div class="route_btn">
+                <div>
+                  <button class="btn btn-outline btn-success rbtn">
+                    Boarding Point-Laxmipur
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-outline btn-success rbtn">
+                    Dropping Point-Bogura
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-outline btn-success rbtn">
+                    Est.Time-11 Hour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="taka col-span-3">
+              <div>
+                <img src="images/info-devider.png" />
+              </div>
+              <div class="taka_part">
+                <img src="images/fare.png" class="tk2" />
+                <h2 class="text-3xl font-bold">550 Taka</h2>
+                <p>per seats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-12 greenback">
+          <div class="grid col-span-7 seat1">
+            <div>
+              <h2>Select Your Seat</h2>
+            </div>
+            <hr class="new2" />
+            <div class="available">
+              <div class="availline">
+                <div>
+                  <img src="images/seat-gray.png" class="px-2" />
+                </div>
+                <div>Available</div>
+              </div>
+              <div class="availline">
+                <div><img src="images/seat-green-filled.png" /></div>
+                <div class="avail px-2">Selected</div>
+              </div>
+            </div>
+            <hr class="new2" />
+            <div class="grid grid-cols-2 rem">
+              <div class="col-span-1">
+                <div>
+                  <button class="btn btn key remove"></button>
+                  <button class="btn btn key remove"></button>
+                  <button class="btn btn key remove"></button>
+                </div>
+                <div>
+                  <div class="btn remove">A</div>
+                  <div class="btn btn-active key">A1</div>
+                  <div class="btn btn-active key">A2</div>
+                </div>
+                <div>
+                  <div class="btn remove">B</div>
+                  <button class="btn btn-active key">B1</button>
+                  <button class="btn btn-active key">B2</button>
+                </div>
+                <div>
+                  <div class="btn remove">C</div>
+                  <button class="btn btn-active key">C1</button>
+                  <button class="btn btn-active key">C2</button>
+                </div>
+                <div>
+                  <div class="btn remove">D</div>
+                  <button class="btn btn-active key">D1</button>
+                  <button class="btn btn-active key">D2</button>
+                </div>
+                <div>
+                  <div class="btn remove">E</div>
+                  <button class="btn btn-active key">E1</button>
+                  <button class="btn btn-active key">E2</button>
+                </div>
+                <div>
+                  <div class="btn remove">F</div>
+                  <button class="btn btn-active key">F1</button>
+                  <button class="btn btn-active key">F2</button>
+                </div>
+                <div>
+                  <div class="btn remove">G</div>
+                  <button class="btn btn-active key">G1</button>
+                  <button class="btn btn-active key">G2</button>
+                </div>
+                <div>
+                  <div class="btn remove">H</div>
+                  <button class="btn btn-active key">H1</button>
+                  <button class="btn btn-active key">H2</button>
+                </div>
+                <div>
+                  <div class="btn remove">I</div>
+                  <button class="btn btn-active key">I1</button>
+                  <button class="btn btn-active key">I2</button>
+                </div>
+                <div>
+                  <div class="btn remove">J</div>
+                  <button class="btn btn-active key">J1</button>
+                  <button class="btn btn-active key">J2</button>
+                </div>
+              </div>
+              <div class="col-span-1">
+                <div>
+                  <div class="btn btn key remove"></div>
+                  <button class="btn btn key remo">
+                    <svg
+                      width="30"
+                      height="55"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 25C11.4241 25 9.86371 24.6896 8.4078 24.0866C6.95189 23.4835 5.62902 22.5996 4.51472 21.4853C3.40042 20.371 2.5165 19.0481 1.91345 17.5922C1.31039 16.1363 1 14.5759 1 13C1 11.4241 1.31039 9.86371 1.91345 8.4078C2.5165 6.95189 3.40042 5.62902 4.51472 4.51472C5.62902 3.40042 6.95189 2.5165 8.4078 1.91345C9.86371 1.31039 11.4241 1 13 1C14.5759 1 16.1363 1.31039 17.5922 1.91345C19.0481 2.5165 20.371 3.40042 21.4853 4.51472C22.5996 5.62902 23.4835 6.95189 24.0866 8.4078C24.6896 9.86371 25 11.4241 25 13C25 14.5759 24.6896 16.1363 24.0866 17.5922C23.4835 19.0481 22.5996 20.371 21.4853 21.4853C20.371 22.5996 19.0481 23.4835 17.5922 24.0866C16.1363 24.6896 14.5759 25 13 25ZM13 25V15.6667M10.3333 13C10.3333 13.7072 10.6143 14.3855 11.1144 14.8856C11.6145 15.3857 12.2928 15.6667 13 15.6667M10.3333 13C10.3333 12.2928 10.6143 11.6145 11.1144 11.1144C11.6145 10.6143 12.2928 10.3333 13 10.3333C13.7072 10.3333 14.3855 10.6143 14.8856 11.1144C15.3857 11.6145 15.6667 12.2928 15.6667 13M10.3333 13L1.33333 10.3333M13 15.6667C13.7072 15.6667 14.3855 15.3857 14.8856 14.8856C15.3857 14.3855 15.6667 13.7072 15.6667 13M15.6667 13L24.6667 10.3333"
+                        stroke="#030712"
+                        stroke-opacity="0.7"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">A3</button>
+                  <button class="btn btn-active key">A4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">B3</button>
+                  <button class="btn btn-active key">B4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">C3</button>
+                  <button class="btn btn-active key">C4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">D3</button>
+                  <button class="btn btn-active key">D4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">E3</button>
+                  <button class="btn btn-active key">E4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">F3</button>
+                  <button class="btn btn-active key">F4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">G3</button>
+                  <button class="btn btn-active key">G4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">H3</button>
+                  <button class="btn btn-active key">H4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">I3</button>
+                  <button class="btn btn-active key">I4</button>
+                </div>
+                <div>
+                  <button class="btn btn-active key remo">J3</button>
+                  <button class="btn btn-active key">J4</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid col-span-5">
+            <div class="vl_part">
+              <div class="vl"></div>
+
+              <div class="seat2">
+                <div>
+                  <h2>Select Your Seat</h2>
+                </div>
+                <hr class="new2 mt-4" />
+                <div class="overflow-x-auto">
+                  <table class="table" id="tblTickets" style="width: 100%">
+                    <!-- head -->
+                    <thead>
+                      <tr>
+                        <td>
+                          Seats
+                          <div
+                            class="badge"
+                            style="background-color: #1dd100"
+                            id="lblSeatCount"
+                          >
+                            0
+                          </div>
+                        </td>
+                        <td class="row">Class</td>
+                        <td class="row">Price</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- row 1 -->
+                      <!-- <tr>
+                        <td>A1</td>
+                        <td class="row">Economy</td>
+                        <td class="row">550</td>
+                      </tr>
+                      <!-- row 2 -->
+                    </tbody>
+                  </table>
+                </div>
+                <hr class="new2" />
+                <div class="total" style="width: 85%">
+                  <div class="row">Total Price</div>
+                  <div class="row" id="tblTotal">BDT</div>
+                </div>
+
+                <div class="total" id="discountArea" style="width: 85%">
+                  <div class="row">Discount Price</div>
+                  <div class="row" id="lblDiscountAmt">BDT</div>
+                </div>
+
+                <div class="navbar bg-base-100" id="couponArea">
+                  <div class="flex-none gap-2">
+                    <div class="form-control">
+                      <input
+                        id="txtCoupon"
+                        type="text"
+                        placeholder="Have Any Coupon"
+                        class="input input-bordered w-24 md:w-auto"
+                      />
+                    </div>
+
+                    <button
+                      class="btn"
+                      id="btnApplyCoupon"
+                      style="background-color: #1dd100"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                </div>
+                <div class="total" style="width: 85%">
+                  <div class="row">Grand Total</div>
+                  <div class="row" id="grandTotal">BDT</div>
+                </div>
+
+                <div>
+                  <div class="p-4">
+                    <label for="">Passenger Name*</label><br />
+                    <input
+                      type="text"
+                      name=""
+                      id="txtPassengerName"
+                      placeholder="Enter your name"
+                      required=""
+                      class="lab"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <label for="">Phone Number*</label><br />
+                    <input
+                      type="text"
+                      onkeyup="checkValidity()"
+                      id="txtPassengerPhone"
+                      placeholder="Enter your phone Number"
+                      class="lab"
+                    />
+                  </div>
+                  <div class="p-4">
+                    <label for="">Email ID</label><br />
+                    <input
+                      type="text"
+                      name=""
+                      id="txtPassengerEmail"
+                      placeholder="Enter your email id"
+                      class="lab"
+                    />
+                  </div>
+                  <button
+                    class="btn"
+                    id="btnNext"
+                    style="background-color: #1dd100; width: 100%"
+                  >
+                    Next
+                  </button>
+                  <div class="modal" role="dialog" id="success_modal">
+                    <div class="modal-box">
+                      <img
+                        src="images/success.png"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          margin-left: 40%;
+                        "
+                      />
+                      <h3 class="font-bold text-lg" style="text-align: center">
+                        Thank you for Booking Our Bus Seats
+                      </h3>
+                      <h3 class="font-bold text-lg" style="text-align: center">
+                        We are Working hard to find the best service and deals
+                        for you.
+                      </h3>
+                      <p class="py-4" style="text-align: center">
+                        Shortly you will conformation in your email
+                      </p>
+                      <div class="modal-action">
+                        <a
+                          href="#"
+                          class="btn"
+                          style="background-color: #1dd100; text-align: center"
+                          >continue</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="total">
+                    <div><a>Terms & Conditions</a></div>
+                    <div>Cancellation Policy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="foo">
+        <div>
+          <h1 class="text-2xl font-bold">Whizz-Ticket</h1>
+          <p>
+            Whizz-Ticket is a digital platform to make your<br />daily commuting
+            better
+          </p>
+        </div>
+        <div>
+          <h6 class="footer-title">Download our app</h6>
+          <div class="foot">
+            <div>
+              <img src="images/playstore.png" class="px-2 py-2" />
+            </div>
+            <div>
+              <h5>GET IT ON</h5>
+              <h1 class="text-2xl font-semibold">Google Play</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="new2 hrr" />
+      <div class="right">
+        <div>
+          <p>@ all rights reserved,Whizz-Ticket Services limited.2024</p>
+        </div>
+        <div class="term">
+          <div>Terms & Condition</div>
+          <div>Return & Refund Policy</div>
+          <div>Privacy Policy</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/code.js"></script>
+  </body>
+</html>
