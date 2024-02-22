@@ -52,11 +52,6 @@ btnApplyCoupon.addEventListener("click", function () {
     var netTotal = totalAmt * 0.85;
     var discount = totalAmt * 0.15;
 
-    // grandTotal.textContent = netTotal.toLocaleString("en-US", {
-    //   style: "currency",
-    //   currency: "BDT",
-    // });
-
     lblGrandTotal.textContent = netTotal.toLocaleString("en-US", {
       style: "currency",
       currency: "BDT",
@@ -97,7 +92,6 @@ var buttons = document.querySelectorAll(".btn-active");
 
 buttons.forEach(function (button) {
   button.addEventListener("click", function () {
-    // Toggle the 'clicked' class to change background color
 
     var hasClickedClass = this.classList.contains("clicked");
 
@@ -138,11 +132,10 @@ buttons.forEach(function (button) {
 function updateTable() {
   var tableBody = document.querySelector("#tblTickets tbody");
 
-  // Clear existing table rows
+  
   tableBody.innerHTML = "";
 
   var total = 0;
-  // Loop through the data array and add rows to the table
   ticketData.forEach(function (item) {
     var row = tableBody.insertRow();
     var cell1 = row.insertCell(0);
